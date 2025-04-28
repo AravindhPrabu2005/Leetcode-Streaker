@@ -6,7 +6,7 @@ function App() {
     const [maxStreak, setMaxStreak] = useState(null)
 
     const fetchStreak = async () => {
-        const res = await axios.get(`http://localhost:5000/api/streak/aravindhprabu2005`)
+        const res = await axios.get(`https://leetcode-streaker.onrender.com/api/streak/aravindhprabu2005`)
         setStreak(res.data.currentStreak)
         setMaxStreak(res.data.maxStreak)
     }
